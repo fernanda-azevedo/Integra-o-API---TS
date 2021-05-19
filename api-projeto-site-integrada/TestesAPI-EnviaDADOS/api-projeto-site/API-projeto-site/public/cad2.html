@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="CSS/img-icon/logoverde.png">
+    <link rel="stylesheet" href="CSS/login-css.css">
+    <link rel="stylesheet" href="CSS/cad1-css.css">
+    <link rel="stylesheet" href="CSS/cad2-css.css">
+    <title> Tela Cadastro 2 </title>
+</head>
+
+<body>
+    <main>
+        <div class="img_fundo_esquerdo">
+            <nav class="login_cadastro text_shadow">
+                <ul>
+                    <a href="">
+                        <li id="login_style"> Login </li>
+                    </a>
+                    <li class="cadastro_style cadastro"> Cadastro </li>
+                </ul>
+            </nav>
+            <div class="tank_solution text_shadow"> Tank Solution </div>
+            <a href="home.html">
+                <div class="text_shadow voltar_inicio">
+                    Voltar Para Página Inicial 
+                </div>
+            </a>
+        </div>
+
+        <!-- Botões 1, 2, 3 de Cima da Pagina  -->
+        <div class="div_info">
+            <div class="botao_alinhamento">
+                <a href="cad1.html">
+                    <button class="button_style button_color" id="botao_um"> 1 </button>
+                </a>
+                <div class="linha_entre_botao button_color"></div>
+
+                <button class="button_style button_color" id="botao_dois"> 2 </button>
+
+                <div class="linha_entre_botao"></div>
+
+                <button class="button_style"> 3 </button>
+            </div>
+
+            <div class="div_alinhar_meio">
+                <!-- Imagens das Redes -->
+                <div class="div_linha_ou">
+                    <div class="linha_profile"> </div>
+                    <img id="img_profile" src="CSS/img-cad-login/profile-user 2.png" alt="">
+                    <div class="linha_profile"> </div>
+                </div>
+
+                <br><br>
+
+                <!-- Começo do cadastro -->
+                <form action="cad3.html" method="POST">
+                    <span class="txt_esquerda"> Nome: </span>
+                    <br>
+                    <input class="input_style" required type="text" placeholder="Nome Completo">
+
+                    <br><br>
+
+                    <span class="txt_esquerda"> CPF ou CNPJ </span>
+                    <br>
+                    <input class="input_style" required type="text" required placeholder="Apenas Números">
+
+                    <br><br>
+
+                    <span> Data de Nascimento: </span>
+                    <span class="txt_direita"> Sexo: </span>
+                    <div id="form_escolha">
+                        <input type="radio" style="margin-left: 10px;"> <span> Marculino </span>
+                        <input type="radio"> <span> Feminino </span>
+                    </div>
+                    <input class="input_style input_medio" required type="date">
+
+                    <br><br>
+
+                    <span> Tamanho do Tanque </span>
+                    <span class="txt_direita"> Sou: </span>
+                    <br>
+                    <input class="input_style input_medio" type="text" placeholder="Pequeno/Medio/Grande">
+                    <input class="input_style input_medio input_direita" required type="text"
+                        placeholder="Fisica/Juridica">
+                    <button class="btn-final btn-proximo" id="prox" type="submit"> Próximo </button>
+                </form>
+            </div>
+            <a href="cad1.html"> <button class="btn-final btn-voltar" type="submit"> Anterior </button> </a>
+    </main>
+</body>
+
+</html>

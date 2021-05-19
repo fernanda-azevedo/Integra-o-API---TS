@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="CSS/img-icon/logoverde.png">
+    <link rel="stylesheet" href="CSS/login-css.css">
+    <link rel="stylesheet" href="CSS/cad1-css.css">
+    <link rel="stylesheet" href="CSS/cad2-css.css">
+    <link rel="stylesheet" href="CSS/cad3-css.css">
+    <title> Tela Cadastro 3 </title>
+</head>
+
+<body>
+    <main>
+        <div class="img_fundo_esquerdo">
+            <nav class="login_cadastro text_shadow">
+                <ul>
+                    <a href="login.html">
+                        <li id="login_style"> Login </li>
+                    </a>
+                    <li class="cadastro_style cadastro"> Cadastro </li>
+                </ul>
+            </nav>
+            <div class="tank_solution"> Tank Solution </div>
+            <a href="home.html">
+                <div class="text_shadow voltar_inicio" id="voltar">
+                    < Voltar Para Página Inicial </div>
+            </a>
+        </div>
+
+        <!-- Botões 1, 2, 3 de Cima da Pagina  -->
+        <div class="div_info">
+            <div class="botao_alinhamento">
+
+                <a href="cad1.html">
+                    <button class="button_style button_color" id="botao_um"> 1 </button>
+                </a>
+                <div class="linha_entre_botao button_color"></div>
+                <a href="cad2.html">
+                    <button class="button_style button_color" id="botao_dois"> 2 </button>
+                </a>
+                <div class="linha_entre_botao button_color"></div>
+
+                <button class="button_style button_color"> 3 </button>
+            </div>
+
+            <div class="div_alinhar_meio">
+                <!-- Começo do cadastro -->
+                <form action="login.html" onsubmit="test()" method="POST">
+
+                    <span class="txt_esquerda"> CEP: </span>
+                    <span class="txt_direita"> Estado </span>
+                    <br>
+                    <input id="cep" class="input_style input_medio" required type="text"
+                        placeholder="CEP (apenas numeros)">
+                    <input id="estado" class="input_style input_medio input_margin" required type="text"
+                        placeholder="Exemplo: SP">
+
+                    <br><br>
+
+                    <span class="txt_esquerda"> Cidade </span>
+                    <span class="txt_direita" id="txt_municipio"> Municipio </span>
+                    <br>
+                    <input id="cidade" class="input_style input_medio" type="text" required placeholder="Cidade">
+                    <input id="municipio" class="input_style input_medio input_margin" required type="text"
+                        placeholder="Municipio">
+
+                    <br><br>
+
+                    <span> Bairro </span>
+                    <br>
+                    <input id="bairro" class="input_style input_maior" required type="text" placeholder="Bairro">
+
+                    <br><br>
+
+                    <span class="txt_esquerda"> Rua </span>
+                    <span class="txt_direita" id="txt_numero"> Número </span>
+                    <br>
+                    <input id="rua" class="input_style input_medio input_medio_grande" required type="text"
+                        placeholder="Rua">
+                    <input id="numero" class="input_style input_medio input_direita input_menor" required type="text"
+                        placeholder="N°">
+
+                    <br><br>
+
+                    <span> Complemento </span>
+                    <br>
+                    <input id="complemento" class="input_style input_maior" type="text" required
+                        placeholder="Complemento">
+                    <button class="btn-final" type="submit"> Cadastrar </button>
+                </form>
+            </div>
+    </main>
+</body>
+
+</html>
+
+<script>
+    function test() {
+
+        alert('Sua conta foi criada com sucesso!')
+        window.location.href = 'login.html';
+    };
+</script>
